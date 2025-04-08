@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="mdui-theme-auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+    <meta name="renderer" content="webkit"/>
+    <title>星萌卡包</title>
+    <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
+    <script src="./js/qrcode.min.js"></script>
+    <script src="./js/jsqr.min.js"></script>
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <h1 style="width: 90%; margin: 20px auto 5px;">星萌卡包</h1>
+        <div style="width: 90%; margin: 0 auto;">
+            <mdui-select label="活动" id="event-select" style="width: 100%;">
+                <mdui-button-icon slot="icon" icon="delete_forever" id="delete-event"></mdui-button-icon>
+                <mdui-button-icon slot="end-icon" icon="add_circle" id="add-event"></mdui-button-icon>
+            </mdui-select>
+        </div>
+        <div id="cards-container"></div>
+        <div style="width: 90%; margin: 40px auto; align-self: center;">
+            <mdui-card style="width: 100%; text-align: center;"> 
+                <p>温馨提示</p>
+                <p>Beta版本 请勿用于生产环境</p>
+            </mdui-card>
+        </div>
+    </div>
+</body>
+</html>
